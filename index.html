@@ -22,55 +22,98 @@
         <div class=scroll-indicator>
             <div class=scroll-progress style=height:0%></div>
         </div>
-        <header class="fixed top-0 left-0 right-0 z-40 glassmorphism" style=transform:none>
-            <div class="container mx-auto px-6 py-4">
-                <div class="flex items-center justify-between">
-                    <div class="text-2xl font-bold text-gradient cursor-pointer"> Muhammad Rehan Rasheed </div>
-                    <nav class="hidden md:block">
-                        <ul class="flex space-x-8">
-                            <li><button
-                                    class="hover:text-electric transition-colors duration-300 cursor-pointer text-electric">Home</button>
-                            <li><button
-                                    class="hover:text-electric transition-colors duration-300 cursor-pointer">About</button>
-                            <li><button
-                                    class="hover:text-electric transition-colors duration-300 cursor-pointer">Projects</button>
-                            <li><button
-                                    class="hover:text-electric transition-colors duration-300 cursor-pointer">Skills</button>
-                            <li><button
-                                    class="hover:text-electric transition-colors duration-300 cursor-pointer">Contact</button>
-                        </ul>
-                    </nav>
-                    <div class="flex items-center space-x-4"><button
-                            class="md:hidden p-2 rounded-lg glassmorphism sf-hidden" tabindex=0><svg
-                                xmlns=http://www.w3.org/2000/svg width=24 height=24 viewBox="0 0 24 24" fill=none
-                                stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round
-                                class="lucide lucide-menu w-6 h-6" aria-hidden=true>
-                                <path d="M4 12h16"></path>
-                                <path d="M4 18h16"></path>
-                                <path d="M4 6h16"></path>
-                            </svg></button></div>
-                </div>
+<header class="fixed top-0 left-0 right-0 z-40 glassmorphism">
+    <div class="container mx-auto px-6 py-4">
+
+        <div class="flex items-center justify-between relative">
+
+            <!-- Logo -->
+            <div
+                class="text-2xl md:text-3xl font-bold text-gradient cursor-pointer whitespace-nowrap">
+                Muhammad Rehan Rasheed
             </div>
-        </header>
-        <nav class="fixed right-8 top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
-            <ul class=space-y-4>
-                <li><button
-                        class="nav-dot block w-3 h-3 rounded-full border-0 transition-all duration-300 bg-electric scale-150"
-                        tabindex=0></button>
-                <li><button
-                        class="nav-dot block w-3 h-3 rounded-full border-0 transition-all duration-300 bg-white bg-opacity-30 hover:bg-electric"
-                        tabindex=0></button>
-                <li><button
-                        class="nav-dot block w-3 h-3 rounded-full border-0 transition-all duration-300 bg-white bg-opacity-30 hover:bg-electric"
-                        tabindex=0></button>
-                <li><button
-                        class="nav-dot block w-3 h-3 rounded-full border-0 transition-all duration-300 bg-white bg-opacity-30 hover:bg-electric"
-                        tabindex=0></button>
-                <li><button
-                        class="nav-dot block w-3 h-3 rounded-full border-0 transition-all duration-300 bg-white bg-opacity-30 hover:bg-electric"
-                        tabindex=0></button>
-            </ul>
-        </nav>
+
+            <!-- Navigation -->
+            <nav
+                class="hidden md:block ml-auto"
+                aria-label="Main navigation">
+
+                <ul class="flex items-center gap-6 lg:gap-10">
+
+                    <li class="w-full md:w-auto">
+                        <button
+                            type="button"
+                            class="w-full md:w-auto text-center whitespace-nowrap hover:text-electric transition-colors duration-300 cursor-pointer text-electric">
+                            Home
+                        </button>
+                    </li>
+
+                    <li class="w-full md:w-auto">
+                        <button
+                            type="button"
+                            class="w-full md:w-auto text-center whitespace-nowrap hover:text-electric transition-colors duration-300 cursor-pointer">
+                            About
+                        </button>
+                    </li>
+
+                    <li class="w-full md:w-auto">
+                        <button
+                            type="button"
+                            class="w-full md:w-auto text-center whitespace-nowrap hover:text-electric transition-colors duration-300 cursor-pointer">
+                            Projects
+                        </button>
+                    </li>
+
+                    <li class="w-full md:w-auto">
+                        <button
+                            type="button"
+                            class="w-full md:w-auto text-center whitespace-nowrap hover:text-electric transition-colors duration-300 cursor-pointer">
+                            Skills
+                        </button>
+                    </li>
+
+                    <li class="w-full md:w-auto">
+                        <button
+                            type="button"
+                            class="w-full md:w-auto text-center whitespace-nowrap hover:text-electric transition-colors duration-300 cursor-pointer">
+                            Contact
+                        </button>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button
+                type="button"
+                class="md:hidden ml-auto p-3 rounded-lg glassmorphism hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false">
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-6 h-6">
+
+                    <path d="M4 6h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 18h16"></path>
+
+                </svg>
+
+            </button>
+
+        </div>
+
+    </div>
+</header>
         <main>
             <section id=hero class="min-h-screen flex items-center justify-center relative overflow-hidden">
                 <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -147,578 +190,625 @@
                 </div>
             </section>
             <section id="about" class="py-20 relative">
-    <div class="container mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="container mx-auto px-6">
+                    <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-            <!-- Left Side -->
-            <div style="opacity:1;transform:none">
+                        <!-- Left Side -->
+                        <div style="opacity:1;transform:none">
 
-                <h2 class="text-4xl md:text-5xl font-bold mb-8">
-                    About <span class="text-gradient">Me</span>
-                </h2>
+                            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                                About <span class="text-gradient">Me</span>
+                            </h2>
 
-                <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+                            <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
 
-                    <p style="opacity:1;transform:none">
-                        I'm a Full-Stack Web Developer passionate about building modern websites,
-                        scalable SaaS platforms, and custom web applications that solve real business
-                        problems. I specialize in creating clean, responsive, and high-performance
-                        digital experiences using modern web technologies.
-                    </p>
+                                <p style="opacity:1;transform:none">
+                                    I'm a Full-Stack Web Developer passionate about building modern websites,
+                                    scalable SaaS platforms, and custom web applications that solve real business
+                                    problems. I specialize in creating clean, responsive, and high-performance
+                                    digital experiences using modern web technologies.
+                                </p>
 
-                    <p style="opacity:1;transform:none">
-                        My expertise includes React.js, Next.js, Node.js, Express.js, MongoDB,
-                        WordPress, and Webflow. From business websites and admin dashboards to
-                        enterprise applications and AI-powered solutions, I enjoy turning ideas into
-                        reliable software products.
-                    </p>
+                                <p style="opacity:1;transform:none">
+                                    My expertise includes React.js, Next.js, Node.js, Express.js, MongoDB,
+                                    WordPress, and Webflow. From business websites and admin dashboards to
+                                    enterprise applications and AI-powered solutions, I enjoy turning ideas into
+                                    reliable software products.
+                                </p>
 
-                    <p style="opacity:1;transform:none">
-                        Beyond development, I focus on writing maintainable code, delivering great
-                        user experiences, and communicating clearly throughout every project. I'm
-                        constantly learning new technologies to help businesses build faster, smarter,
-                        and more scalable digital solutions.
-                    </p>
+                                <p style="opacity:1;transform:none">
+                                    Beyond development, I focus on writing maintainable code, delivering great
+                                    user experiences, and communicating clearly throughout every project. I'm
+                                    constantly learning new technologies to help businesses build faster, smarter,
+                                    and more scalable digital solutions.
+                                </p>
+
+                            </div>
+
+                            <div class="mt-8 grid grid-cols-2 gap-6">
+
+                                <div
+                                    class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-3xl font-bold text-electric mb-2">2+</div>
+                                    <div class="text-gray-400">Years Experience</div>
+                                </div>
+
+                                <div
+                                    class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-3xl font-bold text-electric mb-2">20+</div>
+                                    <div class="text-gray-400">Projects Completed</div>
+                                </div>
+
+                                <div
+                                    class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-3xl font-bold text-electric mb-2">10+</div>
+                                    <div class="text-gray-400">Technologies</div>
+                                </div>
+
+                                <div
+                                    class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-3xl font-bold text-electric mb-2">100%</div>
+                                    <div class="text-gray-400">Client Focused</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Right Side -->
+                        <div style="opacity:1;transform:none">
+
+                            <div class="glassmorphism p-8 rounded-2xl">
+                                <h3 class="text-2xl font-bold mb-6 text-gradient">
+                                    Professional Experience
+                                </h3>
+
+                                <div class="space-y-6">
+
+                                    <div class="flex items-start space-x-4" style="opacity:1;transform:none">
+                                        <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+
+                                        <div>
+                                            <h4 class="font-semibold text-lg">Full Stack Engineer</h4>
+
+                                            <p class="text-emerald-400 text-sm">
+                                                Lark Creatives • May 2025 – Present
+                                            </p>
+
+                                            <p class="text-gray-400 mt-2">
+                                                Building scalable web applications, SaaS products, AI-powered solutions,
+                                                and business websites using React.js, Node.js, MongoDB, WordPress, and
+                                                Webflow while managing projects from development to deployment.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start space-x-4" style="opacity:1;transform:none">
+                                        <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+
+                                        <div>
+                                            <h4 class="font-semibold text-lg">Full Stack Developer</h4>
+
+                                            <p class="text-emerald-400 text-sm">
+                                                Octaloop IT & NS • Jan 2025 – Apr 2025
+                                            </p>
+
+                                            <p class="text-gray-400 mt-2">
+                                                Developed responsive full-stack applications using React.js, Node.js,
+                                                MySQL, and MongoDB while working in an Agile environment with REST APIs
+                                                and modern development practices.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start space-x-4" style="opacity:1;transform:none">
+                                        <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+
+                                        <div>
+                                            <h4 class="font-semibold text-lg">Web Developer</h4>
+
+                                            <p class="text-emerald-400 text-sm">
+                                                CodeQuest • Oct 2024 – Dec 2024
+                                            </p>
+
+                                            <p class="text-gray-400 mt-2">
+                                                Built responsive websites using HTML, CSS, JavaScript, and WordPress
+                                                while collaborating with senior developers on feature implementation,
+                                                optimization, and maintenance.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start space-x-4" style="opacity:1;transform:none">
+                                        <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+
+                                        <div>
+                                            <h4 class="font-semibold text-lg">WordPress Developer & Graphic Designer
+                                            </h4>
+
+                                            <p class="text-emerald-400 text-sm">
+                                                Webfoxs & Benchmark Studio • 2022 – 2023
+                                            </p>
+
+                                            <p class="text-gray-400 mt-2">
+                                                Started my professional journey designing digital assets before moving
+                                                into WordPress development, creating responsive websites, customizing
+                                                themes, and delivering client-focused web solutions.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="py-20 relative">
+                <div class="container mx-auto px-6">
+
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                            Featured <span class="text-gradient">Projects</span>
+                        </h2>
+
+                        <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                            A selection of AI solutions, enterprise applications, modern business websites, and web
+                            applications I've built to help companies automate workflows, improve user experience, and
+                            grow their digital presence.
+                        </p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-8">
+
+                        <!-- Project 1 -->
+                        <div
+                            class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+
+                            <img src="./assets/projects/takivo.png" alt="Takivo AI">
+
+                            <div class="p-8">
+
+                                <span class="text-electric text-sm font-semibold">
+                                    AI Powered Web Application
+                                </span>
+
+                                <h3 class="text-2xl font-bold mt-3 mb-4">
+                                    Takivo AI
+                                </h3>
+
+                                <p class="text-gray-400 leading-relaxed mb-6">
+                                    An AI-powered chat application built with a modern full-stack architecture,
+                                    delivering intelligent conversations through a fast, responsive, and scalable user
+                                    experience.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">AI APIs</span>
+                                </div>
+
+                                <a href="https://takivo.ai" target="_blank"
+                                    class="text-electric font-semibold hover:underline">
+                                    View Live Project →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div
+                            class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+
+                            <img src="./assets/projects/ems.png" alt="Employee Management System">
+
+                            <div class="p-8">
+
+                                <span class="text-electric text-sm font-semibold">
+                                    Enterprise Business Platform
+                                </span>
+
+                                <h3 class="text-2xl font-bold mt-3 mb-4">
+                                    Employee Management System
+                                </h3>
+
+                                <p class="text-gray-400 leading-relaxed mb-6">
+                                    A full-stack employee management platform for managing employees, attendance,
+                                    departments, roles, and administrative workflows through a secure dashboard.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Express.js</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                </div>
+
+                                <a href="https://ems.larkcreatives.com" target="_blank"
+                                    class="text-electric font-semibold hover:underline">
+                                    View Live Project →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div
+                            class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+
+                            <img src="./assets/projects/squint.png" alt="SQUINT Cognition">
+
+                            <div class="p-8">
+
+                                <span class="text-electric text-sm font-semibold">
+                                    Corporate Website
+                                </span>
+
+                                <h3 class="text-2xl font-bold mt-3 mb-4">
+                                    SQUINT Cognition
+                                </h3>
+
+                                <p class="text-gray-400 leading-relaxed mb-6">
+                                    A premium corporate website built in Webflow with CMS integration, responsive
+                                    layouts, performance optimization, and a modern user experience.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag">Webflow</span>
+                                    <span class="skill-tag">CMS</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                    <span class="skill-tag">SEO</span>
+                                </div>
+
+                                <a href="https://www.squintcognition.com" target="_blank"
+                                    class="text-electric font-semibold hover:underline">
+                                    View Live Project →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div
+                            class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+
+                            <img src="./assets/projects/frame-foundation.png" alt="Frame Foundation">
+
+                            <div class="p-8">
+
+                                <span class="text-electric text-sm font-semibold">
+                                    Corporate Website
+                                </span>
+
+                                <h3 class="text-2xl font-bold mt-3 mb-4">
+                                    Frame Foundation
+                                </h3>
+
+                                <p class="text-gray-400 leading-relaxed mb-6">
+                                    Designed and developed a premium corporate website focused on performance,
+                                    accessibility, responsive design, and a polished user experience that effectively
+                                    communicates the organization's mission.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag">Webflow</span>
+                                    <span class="skill-tag">CMS</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                    <span class="skill-tag">SEO</span>
+                                </div>
+
+                                <a href="https://frame.foundation/" target="_blank"
+                                    class="text-electric font-semibold hover:underline">
+                                    View Live Project →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div
+                            class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+
+                            <img src="./assets/projects/nft-marketplace.png" alt="NFT Marketplace">
+
+                            <div class="p-8">
+
+                                <span class="text-electric text-sm font-semibold">
+                                    Web3 Marketplace
+                                </span>
+
+                                <h3 class="text-2xl font-bold mt-3 mb-4">
+                                    NFT Marketplace
+                                </h3>
+
+                                <p class="text-gray-400 leading-relaxed mb-6">
+                                    A modern NFT marketplace featuring a clean interface, responsive design, and
+                                    interactive browsing experience. Built with React.js and Tailwind CSS to deliver a
+                                    fast, scalable, and engaging frontend experience.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">Tailwind CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Vercel</span>
+                                </div>
+
+                                <a href="https://nft-marketplace-roan-seven.vercel.app/" target="_blank"
+                                    class="text-electric font-semibold hover:underline">
+                                    View Live Project →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
-
-                <div class="mt-8 grid grid-cols-2 gap-6">
-
-                    <div class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                        <div class="text-3xl font-bold text-electric mb-2">2+</div>
-                        <div class="text-gray-400">Years Experience</div>
-                    </div>
-
-                    <div class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                        <div class="text-3xl font-bold text-electric mb-2">20+</div>
-                        <div class="text-gray-400">Projects Completed</div>
-                    </div>
-
-                    <div class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                        <div class="text-3xl font-bold text-electric mb-2">10+</div>
-                        <div class="text-gray-400">Technologies</div>
-                    </div>
-
-                    <div class="glassmorphism p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                        <div class="text-3xl font-bold text-electric mb-2">100%</div>
-                        <div class="text-gray-400">Client Focused</div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Right Side -->
-            <div style="opacity:1;transform:none">
-
-                <div class="glassmorphism p-8 rounded-2xl">
-    <h3 class="text-2xl font-bold mb-6 text-gradient">
-        Professional Experience
-    </h3>
-
-    <div class="space-y-6">
-
-        <div class="flex items-start space-x-4" style="opacity:1;transform:none">
-            <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-
-            <div>
-                <h4 class="font-semibold text-lg">Full Stack Engineer</h4>
-
-                <p class="text-emerald-400 text-sm">
-                    Lark Creatives • May 2025 – Present
-                </p>
-
-                <p class="text-gray-400 mt-2">
-                    Building scalable web applications, SaaS products, AI-powered solutions, and business websites using React.js, Node.js, MongoDB, WordPress, and Webflow while managing projects from development to deployment.
-                </p>
-            </div>
-        </div>
-
-        <div class="flex items-start space-x-4" style="opacity:1;transform:none">
-            <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-
-            <div>
-                <h4 class="font-semibold text-lg">Full Stack Developer</h4>
-
-                <p class="text-emerald-400 text-sm">
-                    Octaloop IT & NS • Jan 2025 – Apr 2025
-                </p>
-
-                <p class="text-gray-400 mt-2">
-                    Developed responsive full-stack applications using React.js, Node.js, MySQL, and MongoDB while working in an Agile environment with REST APIs and modern development practices.
-                </p>
-            </div>
-        </div>
-
-        <div class="flex items-start space-x-4" style="opacity:1;transform:none">
-            <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-
-            <div>
-                <h4 class="font-semibold text-lg">Web Developer</h4>
-
-                <p class="text-emerald-400 text-sm">
-                    CodeQuest • Oct 2024 – Dec 2024
-                </p>
-
-                <p class="text-gray-400 mt-2">
-                    Built responsive websites using HTML, CSS, JavaScript, and WordPress while collaborating with senior developers on feature implementation, optimization, and maintenance.
-                </p>
-            </div>
-        </div>
-
-        <div class="flex items-start space-x-4" style="opacity:1;transform:none">
-            <div class="w-3 h-3 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-
-            <div>
-                <h4 class="font-semibold text-lg">WordPress Developer & Graphic Designer</h4>
-
-                <p class="text-emerald-400 text-sm">
-                    Webfoxs & Benchmark Studio • 2022 – 2023
-                </p>
-
-                <p class="text-gray-400 mt-2">
-                    Started my professional journey designing digital assets before moving into WordPress development, creating responsive websites, customizing themes, and delivering client-focused web solutions.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-            </div>
-
-        </div>
-    </div>
-</section>
-          <section id="projects" class="py-20 relative">
-    <div class="container mx-auto px-6">
-
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                Featured <span class="text-gradient">Projects</span>
-            </h2>
-
-            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
-                A selection of AI solutions, enterprise applications, modern business websites, and web applications I've built to help companies automate workflows, improve user experience, and grow their digital presence.
-            </p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-8">
-
-            <!-- Project 1 -->
-            <div class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
-
-                <img src="./assets/projects/takivo.png" alt="Takivo AI">
-
-                <div class="p-8">
-
-                    <span class="text-electric text-sm font-semibold">
-                        AI Powered Web Application
-                    </span>
-
-                    <h3 class="text-2xl font-bold mt-3 mb-4">
-                        Takivo AI
-                    </h3>
-
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        An AI-powered chat application built with a modern full-stack architecture, delivering intelligent conversations through a fast, responsive, and scalable user experience.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">AI APIs</span>
-                    </div>
-
-                    <a href="https://takivo.ai"
-                        target="_blank"
-                        class="text-electric font-semibold hover:underline">
-                        View Live Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Project 2 -->
-            <div class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
-
-                <img src="./assets/projects/ems.png" alt="Employee Management System">
-
-                <div class="p-8">
-
-                    <span class="text-electric text-sm font-semibold">
-                        Enterprise Business Platform
-                    </span>
-
-                    <h3 class="text-2xl font-bold mt-3 mb-4">
-                        Employee Management System
-                    </h3>
-
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        A full-stack employee management platform for managing employees, attendance, departments, roles, and administrative workflows through a secure dashboard.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-
-                    <a href="https://ems.larkcreatives.com"
-                        target="_blank"
-                        class="text-electric font-semibold hover:underline">
-                        View Live Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Project 3 -->
-            <div class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
-
-                <img src="./assets/projects/squint.png" alt="SQUINT Cognition">
-
-                <div class="p-8">
-
-                    <span class="text-electric text-sm font-semibold">
-                        Corporate Website
-                    </span>
-
-                    <h3 class="text-2xl font-bold mt-3 mb-4">
-                        SQUINT Cognition
-                    </h3>
-
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        A premium corporate website built in Webflow with CMS integration, responsive layouts, performance optimization, and a modern user experience.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="skill-tag">Webflow</span>
-                        <span class="skill-tag">CMS</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">SEO</span>
-                    </div>
-
-                    <a href="https://www.squintcognition.com"
-                        target="_blank"
-                        class="text-electric font-semibold hover:underline">
-                        View Live Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Project 4 -->
-            <div class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
-
-                <img src="./assets/projects/frame-foundation.png" alt="Frame Foundation">
-
-                <div class="p-8">
-
-                    <span class="text-electric text-sm font-semibold">
-                        Corporate Website
-                    </span>
-
-                    <h3 class="text-2xl font-bold mt-3 mb-4">
-                        Frame Foundation
-                    </h3>
-
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        Designed and developed a premium corporate website focused on performance, accessibility, responsive design, and a polished user experience that effectively communicates the organization's mission.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="skill-tag">Webflow</span>
-                        <span class="skill-tag">CMS</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">SEO</span>
-                    </div>
-
-                    <a href="https://frame.foundation/"
-                        target="_blank"
-                        class="text-electric font-semibold hover:underline">
-                        View Live Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Project 5 -->
-            <div class="glassmorphism rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
-
-                <img src="./assets/projects/nft-marketplace.png" alt="NFT Marketplace">
-
-                <div class="p-8">
-
-                    <span class="text-electric text-sm font-semibold">
-                        Web3 Marketplace
-                    </span>
-
-                    <h3 class="text-2xl font-bold mt-3 mb-4">
-                        NFT Marketplace
-                    </h3>
-
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        A modern NFT marketplace featuring a clean interface, responsive design, and interactive browsing experience. Built with React.js and Tailwind CSS to deliver a fast, scalable, and engaging frontend experience.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Vercel</span>
-                    </div>
-
-                    <a href="https://nft-marketplace-roan-seven.vercel.app/"
-                        target="_blank"
-                        class="text-electric font-semibold hover:underline">
-                        View Live Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
+            </section>
             <section id=skills class="py-20 relative">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-16" style="opacity:1;transform:none">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">
-        Technical <span class="text-gradient">Skills</span>
-    </h2>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                            Technical <span class="text-gradient">Skills</span>
+                        </h2>
 
-    <p class="text-xl text-gray-300 dark:text-gray-300 max-w-3xl mx-auto">
-        I specialize in building modern, scalable, and high-performance web applications using the latest frontend and backend technologies, CMS platforms, AI integrations, and cloud deployment tools.
-    </p>
-</div>
+                        <p class="text-xl text-gray-300 dark:text-gray-300 max-w-3xl mx-auto">
+                            I specialize in building modern, scalable, and high-performance web applications using the
+                            latest frontend and backend technologies, CMS platforms, AI integrations, and cloud
+                            deployment tools.
+                        </p>
+                    </div>
                     <div class="grid lg:grid-cols-2 gap-16">
                         <div style="opacity:1;transform:none">
-    <h3 class="text-2xl font-bold mb-8 text-gradient">Frontend &amp; Backend</h3>
+                            <h3 class="text-2xl font-bold mb-8 text-gradient">Frontend &amp; Backend</h3>
 
-    <div class="space-y-6">
+                            <div class="space-y-6">
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">HTML5</span>
-                <span class="text-electric font-semibold">98%</span>
-            </div>
-            <div data-skill="HTML5" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:98%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">HTML5</span>
+                                        <span class="text-electric font-semibold">98%</span>
+                                    </div>
+                                    <div data-skill="HTML5"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:98%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">CSS3 / Tailwind CSS</span>
-                <span class="text-electric font-semibold">97%</span>
-            </div>
-            <div data-skill="Tailwind CSS" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:97%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">CSS3 / Tailwind CSS</span>
+                                        <span class="text-electric font-semibold">97%</span>
+                                    </div>
+                                    <div data-skill="Tailwind CSS"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:97%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">JavaScript (ES6+)</span>
-                <span class="text-electric font-semibold">95%</span>
-            </div>
-            <div data-skill="JavaScript" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:95%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">JavaScript (ES6+)</span>
+                                        <span class="text-electric font-semibold">95%</span>
+                                    </div>
+                                    <div data-skill="JavaScript"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:95%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">React.js</span>
-                <span class="text-electric font-semibold">95%</span>
-            </div>
-            <div data-skill="React.js" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:95%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">React.js</span>
+                                        <span class="text-electric font-semibold">95%</span>
+                                    </div>
+                                    <div data-skill="React.js"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:95%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">Node.js</span>
-                <span class="text-electric font-semibold">94%</span>
-            </div>
-            <div data-skill="Node.js" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:94%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">Node.js</span>
+                                        <span class="text-electric font-semibold">94%</span>
+                                    </div>
+                                    <div data-skill="Node.js"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:94%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">Express.js</span>
-                <span class="text-electric font-semibold">93%</span>
-            </div>
-            <div data-skill="Express.js" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:93%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">Express.js</span>
+                                        <span class="text-electric font-semibold">93%</span>
+                                    </div>
+                                    <div data-skill="Express.js"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:93%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">MongoDB</span>
-                <span class="text-electric font-semibold">92%</span>
-            </div>
-            <div data-skill="MongoDB" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:92%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">MongoDB</span>
+                                        <span class="text-electric font-semibold">92%</span>
+                                    </div>
+                                    <div data-skill="MongoDB"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:92%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">PHP</span>
-                <span class="text-electric font-semibold">90%</span>
-            </div>
-            <div data-skill="PHP" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:90%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">PHP</span>
+                                        <span class="text-electric font-semibold">90%</span>
+                                    </div>
+                                    <div data-skill="PHP"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:90%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">WordPress</span>
-                <span class="text-electric font-semibold">96%</span>
-            </div>
-            <div data-skill="WordPress" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:96%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">WordPress</span>
+                                        <span class="text-electric font-semibold">96%</span>
+                                    </div>
+                                    <div data-skill="WordPress"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:96%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">Webflow</span>
-                <span class="text-electric font-semibold">94%</span>
-            </div>
-            <div data-skill="Webflow" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:94%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">Webflow</span>
+                                        <span class="text-electric font-semibold">94%</span>
+                                    </div>
+                                    <div data-skill="Webflow"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:94%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">REST APIs</span>
-                <span class="text-electric font-semibold">94%</span>
-            </div>
-            <div data-skill="REST APIs" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:94%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">REST APIs</span>
+                                        <span class="text-electric font-semibold">94%</span>
+                                    </div>
+                                    <div data-skill="REST APIs"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:94%">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div style="opacity:1;transform:none">
-            <div class="flex justify-between mb-2">
-                <span class="text-lg font-semibold">AI Integrations</span>
-                <span class="text-electric font-semibold">91%</span>
-            </div>
-            <div data-skill="AI" class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
-                <div class="absolute left-0 top-0 h-full rounded-full"
-                    style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:91%">
-                </div>
-            </div>
-        </div>
+                                <div style="opacity:1;transform:none">
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-lg font-semibold">AI Integrations</span>
+                                        <span class="text-electric font-semibold">91%</span>
+                                    </div>
+                                    <div data-skill="AI"
+                                        class="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3 overflow-hidden relative">
+                                        <div class="absolute left-0 top-0 h-full rounded-full"
+                                            style="background:linear-gradient(90deg,rgb(68,130,248) 60%,rgb(0,212,255) 100%);box-shadow:rgb(68,130,248) 0px 0px 8px;height:100%;width:91%">
+                                        </div>
+                                    </div>
+                                </div>
 
-    </div>
-</div>
-<div style="opacity:1;transform:none">
-    <h3 class="text-2xl font-bold mb-8 text-gradient">Tools &amp; Technologies</h3>
+                            </div>
+                        </div>
+                        <div style="opacity:1;transform:none">
+                            <h3 class="text-2xl font-bold mb-8 text-gradient">Tools &amp; Technologies</h3>
 
-    <div class="grid grid-cols-2 gap-6">
+                            <div class="grid grid-cols-2 gap-6">
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">⚛️</span>
-            <h4 class="font-semibold mb-2">React.js</h4>
-            <p class="text-sm text-gray-400">Frontend Development</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">⚛️</span>
+                                    <h4 class="font-semibold mb-2">React.js</h4>
+                                    <p class="text-sm text-gray-400">Frontend Development</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🟢</span>
-            <h4 class="font-semibold mb-2">Node.js</h4>
-            <p class="text-sm text-gray-400">Backend Development</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🟢</span>
+                                    <h4 class="font-semibold mb-2">Node.js</h4>
+                                    <p class="text-sm text-gray-400">Backend Development</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🍃</span>
-            <h4 class="font-semibold mb-2">MongoDB</h4>
-            <p class="text-sm text-gray-400">NoSQL Database</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🍃</span>
+                                    <h4 class="font-semibold mb-2">MongoDB</h4>
+                                    <p class="text-sm text-gray-400">NoSQL Database</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🌐</span>
-            <h4 class="font-semibold mb-2">Express.js</h4>
-            <p class="text-sm text-gray-400">REST API Framework</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🌐</span>
+                                    <h4 class="font-semibold mb-2">Express.js</h4>
+                                    <p class="text-sm text-gray-400">REST API Framework</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">📝</span>
-            <h4 class="font-semibold mb-2">WordPress</h4>
-            <p class="text-sm text-gray-400">CMS Development</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">📝</span>
+                                    <h4 class="font-semibold mb-2">WordPress</h4>
+                                    <p class="text-sm text-gray-400">CMS Development</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🎨</span>
-            <h4 class="font-semibold mb-2">Webflow</h4>
-            <p class="text-sm text-gray-400">No-Code Development</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🎨</span>
+                                    <h4 class="font-semibold mb-2">Webflow</h4>
+                                    <p class="text-sm text-gray-400">No-Code Development</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🔀</span>
-            <h4 class="font-semibold mb-2">Git & GitHub</h4>
-            <p class="text-sm text-gray-400">Version Control</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🔀</span>
+                                    <h4 class="font-semibold mb-2">Git & GitHub</h4>
+                                    <p class="text-sm text-gray-400">Version Control</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🤖</span>
-            <h4 class="font-semibold mb-2">OpenAI APIs</h4>
-            <p class="text-sm text-gray-400">AI Integrations</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🤖</span>
+                                    <h4 class="font-semibold mb-2">OpenAI APIs</h4>
+                                    <p class="text-sm text-gray-400">AI Integrations</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">📦</span>
-            <h4 class="font-semibold mb-2">npm</h4>
-            <p class="text-sm text-gray-400">Package Management</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">📦</span>
+                                    <h4 class="font-semibold mb-2">npm</h4>
+                                    <p class="text-sm text-gray-400">Package Management</p>
+                                </div>
 
-        <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer" style="opacity:1;transform:none">
-            <span class="text-3xl block mx-auto mb-3">🚀</span>
-            <h4 class="font-semibold mb-2">Vercel & Netlify</h4>
-            <p class="text-sm text-gray-400">Deployment Platforms</p>
-        </div>
+                                <div class="glassmorphism p-6 rounded-xl text-center transition-all duration-300 cursor-pointer"
+                                    style="opacity:1;transform:none">
+                                    <span class="text-3xl block mx-auto mb-3">🚀</span>
+                                    <h4 class="font-semibold mb-2">Vercel & Netlify</h4>
+                                    <p class="text-sm text-gray-400">Deployment Platforms</p>
+                                </div>
 
-    </div>
-</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -727,8 +817,11 @@
                     <div class="text-center mb-16" style=opacity:1;transform:none>
                         <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's <span class=text-gradient>Connect</span>
                         </h2>
-                        <p class="text-xl text-gray-300 dark:text-gray-300 max-w-3xl mx-auto">Whether you're looking to build a modern website, a scalable web application, or bring a new idea to life, I'm always excited to collaborate on meaningful projects. Let's connect and create something exceptional together.
-</p>
+                        <p class="text-xl text-gray-300 dark:text-gray-300 max-w-3xl mx-auto">Whether you're looking to
+                            build a modern website, a scalable web application, or bring a new idea to life, I'm always
+                            excited to collaborate on meaningful projects. Let's connect and create something
+                            exceptional together.
+                        </p>
                     </div>
                     <div class="grid lg:grid-cols-2 gap-16 items-start">
                         <div style=opacity:1;transform:none>
@@ -789,7 +882,8 @@
                                 </div>
                                 <div class=mt-8>
                                     <h4 class="font-semibold mb-4">Follow Me</h4>
-                                    <div class="flex space-x-4"><a href="https://www.instagram.com/rehan_rasheed_chaudhary/"
+                                    <div class="flex space-x-4"><a
+                                            href="https://www.instagram.com/rehan_rasheed_chaudhary/"
                                             class="w-10 h-10 bg-electric bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all duration-300"
                                             tabindex=0><svg xmlns=http://www.w3.org/2000/svg width=24 height=24
                                                 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2
@@ -799,7 +893,7 @@
                                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                                 <line x1=17.5 x2=17.51 y1=6.5 y2=6.5></line>
                                             </svg></a>
-                                            <a href="https://www.linkedin.com/in/muhammad-rehan-rasheed/"
+                                        <a href="https://www.linkedin.com/in/muhammad-rehan-rasheed/"
                                             class="w-10 h-10 bg-neon-purple bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all duration-300"
                                             tabindex=0><svg xmlns=http://www.w3.org/2000/svg width=24 height=24
                                                 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2
@@ -812,7 +906,7 @@
                                                 <rect width=4 height=12 x=2 y=9></rect>
                                                 <circle cx=4 cy=4 r=2></circle>
                                             </svg></a>
-                                            <a href="https://github.com/MuhammadRehanRasheed"
+                                        <a href="https://github.com/MuhammadRehanRasheed"
                                             class="w-10 h-10 bg-emerald-400 bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all duration-300"
                                             tabindex=0><svg xmlns=http://www.w3.org/2000/svg width=24 height=24
                                                 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2
@@ -822,7 +916,8 @@
                                                     d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
                                                 </path>
                                                 <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                            </svg></a></div>
+                                            </svg></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -864,13 +959,15 @@
 
                     <div class="text-center md:text-right">
                         <p class="text-gray-400">Have a project in mind?</p>
-                        <a href="mailto:chrehan101@gmail.com" class="inline-block mt-2 font-semibold text-electric hover:text-white transition-colors duration-300">
+                        <a href="mailto:chrehan101@gmail.com"
+                            class="inline-block mt-2 font-semibold text-electric hover:text-white transition-colors duration-300">
                             Let’s work together →
                         </a>
                     </div>
                 </div>
 
-                <div class="mt-8 border-t border-white border-opacity-10 pt-6 flex flex-col items-center justify-between text-sm text-gray-500 md:flex-row">
+                <div
+                    class="mt-8 border-t border-white border-opacity-10 pt-6 flex flex-col items-center justify-between text-sm text-gray-500 md:flex-row">
                     <p>© 2026 Muhammad Rehan Rasheed. All rights reserved.</p>
                     <p class="mt-2 md:mt-0">Lahore, Pakistan</p>
                 </div>
